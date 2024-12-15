@@ -11,8 +11,19 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+
+        orange: {
+          main: '#C95400'
+        },
+
+        yellow:{
+          main: '#C9B900'
+        }
       },
+
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 } satisfies Config;
