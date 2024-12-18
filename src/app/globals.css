@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 
+
 body {
+  color: black;
   font-family: Arial, Helvetica, sans-serif;
+  user-select: contain;
 }

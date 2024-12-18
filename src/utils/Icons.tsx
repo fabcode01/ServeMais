@@ -1,6 +1,8 @@
 import { IoMenuSharp, IoPersonCircle, IoBrowsersOutline   } from "react-icons/io5";
 import { LuCookingPot } from "react-icons/lu";
 import { FaClipboardCheck } from "react-icons/fa";
+import { BiFoodMenu } from "react-icons/bi";
+import { PiDeviceRotateBold  } from "react-icons/pi";
 
 
 export const menuIcon = (
@@ -22,3 +24,13 @@ export const preparationicon = (
 export const wishReadyIcon = (
     <FaClipboardCheck />
 )
+
+
+export const titlePedidosIcon = (
+    <BiFoodMenu/>
+)
+
+export const deviceRotate = (
+    <PiDeviceRotateBold/>
+)
+
