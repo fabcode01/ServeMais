@@ -3,6 +3,7 @@ import { LuCookingPot } from "react-icons/lu";
 import { FaClipboardCheck } from "react-icons/fa";
 import { BiFoodMenu } from "react-icons/bi";
 import { PiDeviceRotateBold  } from "react-icons/pi";
+import { MdError } from "react-icons/md";
 
 
 export const menuIcon = (
@@ -32,5 +33,9 @@ export const titlePedidosIcon = (
 
 export const deviceRotate = (
     <PiDeviceRotateBold/>
+)
+
+export const erroIcon = (
+    <MdError/>
 )
 

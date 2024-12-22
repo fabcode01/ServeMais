@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { OrderProvider } from "@/context/OrderContext";
+
 
 
 export const metadata: Metadata = {
@@ -16,11 +17,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <body
-        className={``}
-      >
-        {children}
-      </body>
+      <OrderProvider>
+        <body
+          className={``}
+        >
+          {children}
+        </body>
+      </OrderProvider>
     </html>
   );
 }

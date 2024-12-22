@@ -3,16 +3,16 @@
 
 import SideMenuKitchen from "@/components/kitchen/SideMenu";
 import { Slider } from "@/components/Slider";
-import { motion } from "motion/react";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import Partial from "./partial";
 import { deviceRotate } from "@/utils/Icons";
+import { OrderContext } from "@/context/OrderContext";
 
 export default function Waiter(){
 
     const[mode, setMode] = useState('')
     const[orientation, setOrientation] = useState('landscape-primary')
-  
+
     const detectOrientation = () => {
       const type = screen.orientation.type
       if(type.startsWith('portrait')){
@@ -31,8 +31,9 @@ export default function Waiter(){
         screen.orientation.removeEventListener('change', detectOrientation)
       }
     },[])
-    
 
+    
+    
     
       return orientation !== 'landscape' ? (
         <div className="flex flex-col gap-5 items-center justify-center p-5 h-screen w-full">
